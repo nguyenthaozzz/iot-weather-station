@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IoT Weather Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="title-group">
+      <h1 id="cityTitle">
+        TP Hồ Chí Minh
+        <span id="weather-icon" >☁️</span>
+        <span id="weather-label">Đang tải...</span>
+      </h1>
+      <div id="dateStr"></div>
+    </div>
+
+    <div class="status-group">
+      <div class="conn-indicator">
+        <span id="connDot" class="dot offline"></span>
+        <span id="connText">Disconnected</span>
+      </div>
+      <button id="sleepBtn" class="chip">Sleep LCD</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="left">
+      <div class="weather-row">
+        <div class="big-temp">
+          <div>
+            <div id="bigTemp" class="temp">--°C</div>
+          </div>
+        </div>
+        <div class="mood">
+          <img id="moodIcon" alt="mood" src="./images/smile.png" />
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-ico">🌡️</div>
+          <div class="card-body">
+            <div class="label">Thấp/Cao</div>
+            <div id="lowHigh">--/--°C</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-ico">💧</div>
+          <div class="card-body">
+            <div class="label">Độ ẩm</div>
+            <div id="humidity">--%</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-ico">⏲️</div>
+          <div class="card-body">
+            <div class="label">Áp suất</div>
+            <div id="pressure">-- hPa</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-ico"><img src="./images/icon_location.png" width="28"></div>
+          <div class="card-body">
+            <div class="label">Vị trí</div>
+            <div class="row">
+              <div id="cityName">TP Hồ Chí Minh</div>
+              <button id="changeCityBtn" class="chip small">Đổi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="right">
+      <h2>Temperature and humidity chart</h2>
+      <div class="time-range">
+        <label for="rangeSelect">Khoảng thời gian:</label>
+        <select id="rangeSelect">
+          <option value="15m" selected>15 phút</option>
+          <option value="1h">1 giờ</option>
+          <option value="6h">6 giờ</option>
+          <option value="1d">1 ngày</option>
+        
+        </select>
+      </div>
+      <canvas id="thChart"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> IoT Weather Station • Localhost Demo</small>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+  <script src="./app.js"></script>
+</body>
+</html>
