@@ -1,0 +1,34 @@
+// chạy thủ công mosquitto
+mosquitto -c "C:\Program Files\mosquitto\mosquitto.conf" -v 
+
+// Chạy ngầm mosquitto
+net start mosquitto
+
+// Tắt chạy ngầm mosquitto
+net stop mosquitto 
+
+// Chạy telegraf
+telegraf --config "C:\Program Files\influxdb\telegraf-1.36.2\telegraf.conf"
+
+
+//Chạy ngầm telegraf
+telegraf.exe --service install --config "C:\Program Files\influxdb\telegraf-1.36.2\telegraf.conf"
+net start telegarf
+
+//Tắt chạy ngầm telegraf
+net stop telegraf
+
+// TOKEN
+7zqvQrsWd2LvPCQAjTJinU73BfP5PuvME0ORWq22YBOyposQwgy-qlmx2t-xyEsZZ857otiwaXlTMgbDfrzzow==
+
+// Gửi thử dữ liệu dạng JSON
+mosquitto_pub -h localhost -t "iot/weather/data" -m "{\"temperature\":30, \"humidity\":50, \"pressure\":1001}"
+
+// Gửi thử dữ liệu dạng influx
+mosquitto_pub -h localhost -t "iot/weather" -m "weather,location=lab temperature=25.6,humidity=60.3,pressure=1012"
+
+//Để xem broker có nhận dữ liệu không
+mosquitto_sub -h localhost -t "iot/weather/#"
+
+// Kiểm tra xem mosquitto có chạy không
+netstat -ano | find "1883"

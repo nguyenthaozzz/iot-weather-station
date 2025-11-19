@@ -1,0 +1,17 @@
+{
+  "name": "iot-weather-dashboard",
+  "version": "1.0.0",
+  "description": "Local IoT Weather Dashboard (InfluxDB + MQTT + Open-Meteo)",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.35.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "mqtt": "^5.14.1",
+    "node-fetch": "^3.3.2"
+  }
+}
