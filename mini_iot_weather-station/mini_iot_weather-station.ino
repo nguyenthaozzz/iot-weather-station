@@ -404,7 +404,7 @@ SimpleTimer timer_updateTime;
 //-----------------------Phan khai bao cho Thoi tiet----------------------------------------------
 //--------------Thoi tiet--------------
 // 🌐 Cấu hình API OpenWeatherMap
-String apiKey = "9e8d639aa101fa84fdf7915e45b6b5ae";  // 🔑 API Key của bạn
+String apiKey = "your API Key";  // 🔑 API Key của bạn
 String city = "Ho Chi Minh";                         // 🏙️ Thành phố cần lấy dữ liệu
 
 // 🌡️ Biến lưu dữ liệu thời tiết

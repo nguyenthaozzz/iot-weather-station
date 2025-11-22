@@ -21,6 +21,9 @@ net stop telegraf
 // TOKEN
 7zqvQrsWd2LvPCQAjTJinU73BfP5PuvME0ORWq22YBOyposQwgy-qlmx2t-xyEsZZ857otiwaXlTMgbDfrzzow==
 
+// API KEY
+9e8d639aa101fa84fdf7915e45b6b5ae
+
 // Gửi thử dữ liệu dạng JSON
 mosquitto_pub -h localhost -t "iot/weather/data" -m "{\"temperature\":30, \"humidity\":50, \"pressure\":1001}"
 
