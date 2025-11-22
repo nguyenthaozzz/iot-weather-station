@@ -5,13 +5,13 @@ It collects temperature, humidity, and pressure, sends them over MQTT to an Infl
 
 
 ## 📌 Features
-🌡️ Real-time temperature, humidity, and pressure monitoring
-📡 ESP32 + MQTT (Mosquitto) for lightweight data transmission
-🗄️ Local InfluxDB + Telegraf for time-series data storage
-📊 Interactive Dashboard (HTML/CSS/JS) with real-time charts
-🖼️ TFT LCD Display for on-device visualization
-🔄 Auto-refresh weather data every few seconds
-🛠️ Fully local deployment — secure, private, and offline-capable
+🌡️ Real-time temperature, humidity, and pressure monitoring </br>
+📡 ESP32 + MQTT (Mosquitto) for lightweight data transmission </br>
+🗄️ Local InfluxDB + Telegraf for time-series data storage </br>
+📊 Interactive Dashboard (HTML/CSS/JS) with real-time charts </br>
+🖼️ TFT LCD Display for on-device visualization </br>
+🔄 Auto-refresh weather data every few seconds </br>
+🛠️ Fully local deployment — secure, private, and offline-capable </br>
 
 ## 📌 System Architecture
 ### Block Diagram
