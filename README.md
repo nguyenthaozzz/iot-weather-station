@@ -63,14 +63,22 @@ listener 1883
 allow_anonymous true
 ```
 4️⃣ Configure InfluxDB
+*Open http://localhost:8086/ to config InfuxDB*
 - Create a bucket
 - Create an API token
 - Update Telegraf config
 
-5️⃣ Run Backend Dashboard
-```
+5️⃣ Run Project
+- **Run mosquitto**
+``"<your url...> \mosquitto.exe" -c "<your url...> \mosquitto.conf" -v  ``
+- **Run influxDB**
+`telegraf --config "<your url...> \influxdb\telegraf-1.36.2\telegraf.conf"`
+- **Run Dashboard**
+``
 node server.js
-```
+``
+> <span style="color: red">! NOTE </span> 
+> Commands run in CMD at inside the project folder. 
 
 5️⃣ Open Dashboard
 Visit: http://localhost:8080
