@@ -80,5 +80,5 @@ node server.js
 > [!NOTE] 
 > Commands run in CMD at inside the project folder. 
 
-5️⃣ Open Dashboard
+6️⃣ Open Dashboard
 Visit: http://localhost:8080
