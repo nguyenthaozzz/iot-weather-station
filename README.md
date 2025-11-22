@@ -77,7 +77,7 @@ allow_anonymous true
 ``
 node server.js
 ``
-> <span style="color: red">! NOTE </span> 
+> [!NOTE] 
 > Commands run in CMD at inside the project folder. 
 
 5️⃣ Open Dashboard
