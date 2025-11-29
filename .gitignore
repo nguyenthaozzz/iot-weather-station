@@ -1,0 +1,4 @@
+.env
+lenh_chay_weather_station.txt
+node_modules
+mosquitto.bat #file run mosquitto 
