@@ -1,0 +1,12 @@
+iotweatherstation\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
+iotweatherstation\list.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+iotweatherstation\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+iotweatherstation\list.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+iotweatherstation\list.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+iotweatherstation\list.o: ../Core/Inc/FreeRTOSConfig.h
+iotweatherstation\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+iotweatherstation\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+iotweatherstation\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+iotweatherstation\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+iotweatherstation\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+iotweatherstation\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

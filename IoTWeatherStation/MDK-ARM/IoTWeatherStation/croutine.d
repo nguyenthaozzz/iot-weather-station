@@ -1,0 +1,14 @@
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+iotweatherstation\croutine.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+iotweatherstation\croutine.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+iotweatherstation\croutine.o: ../Core/Inc/FreeRTOSConfig.h
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h
+iotweatherstation\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
